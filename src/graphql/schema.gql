@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type MakeType {
+  makeId: Int!
+  makeName: String!
+  vehicleTypes: [VehicleType!]!
+}
+
+type VehicleType {
+  typeId: Int!
+  typeName: String!
+}
+
+type Query {
+  makes(limit: Int! = 10, offset: Int! = 0): [MakeType!]!
+}
